@@ -9,6 +9,8 @@
           content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet'
           type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -64,14 +66,15 @@
         <div class="row">
             <div class="cta-info text-center">
                 <h3><span class="dec-tec">“</span>Eating now is easy with Makan Mana<span class="dec-tec">”</span> -
-                    Group 7</h3>
+                    MM Team</h3>
             </div>
         </div>
     </div>
 </section>
 
 
-<!-- FEATURES -->
+<!-- SIDE FEATURES -->
+<!-- NEAREST -->
 <section id="feature" class="section-padding">
     <div class="container">
         <div class="row">
@@ -79,88 +82,33 @@
                 <div class="section-title">
                     <h2 class="head-title">Features</h2>
                     <hr class="botm-line">
-                    <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua..</p>
+                    <p class="sec-para">Makan Mana incorporates with Google Maps to bring you better decision makin. It
+                        shows a number of neraby restaurants, eateries and also diners. it covers a wirde range of food
+                        cuisione be it Malay Cuisine, Chinese Cuisine and Arabic Cuisine. With Google Maps, user is
+                        allow to take distance and time into consideration withouth causing any inconvenience.</p>
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class="col-md-6 wow fadeInRight delay-02s">
-                    <div class="icon">
-                        <i class="fa fa-paint-brush"></i>
-                    </div>
-                    <div class="icon-text">
-                        <h3 class="txt-tl">Easy to Learn and Design</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                            ligula felis euismod semper. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInRight delay-02s">
-                    <div class="icon">
-                        <i class="fa fa-cogs"></i>
-                    </div>
-                    <div class="icon-text">
-                        <h3 class="txt-tl">Bootstrap 3.3.2</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                            ligula felis euismod semper. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInRight delay-04s">
-                    <div class="icon">
-                        <i class="fa fa-mobile"></i>
-                    </div>
-                    <div class="icon-text">
-                        <h3 class="txt-tl">Responsive Design</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                            ligula felis euismod semper. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInRight delay-04s">
-                    <div class="icon">
-                        <i class="fa fa-desktop"></i>
-                    </div>
-                    <div class="icon-text">
-                        <h3 class="txt-tl">No Coding, No Shortcodes</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                            ligula felis euismod semper. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInRight delay-06s">
-                    <div class="icon">
-                        <i class="fa fa-lightbulb-o"></i>
-                    </div>
-                    <div class="icon-text">
-                        <h3 class="txt-tl">High Coversion</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                            ligula felis euismod semper. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInRight delay-06s">
-                    <div class="icon">
-                        <i class="fa fa-clock-o"></i>
-                    </div>
-                    <div class="icon-text">
-                        <h3 class="txt-tl">Save Tons of Time</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id
-                            ligula felis euismod semper. </p>
-                    </div>
-                </div>
+            <div class="col-md-9 wow fadeInRight delay-04s">
+                <div id="map"></div>
             </div>
         </div>
     </div>
 </section>
-
+<!-- SUGGESTIONS -->
 <section class="section-padding parallax bg-image-2 section wow fadeIn delay-08s" id="cta-2">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="cta-txt">
-                    <h3>Subscribe For Updates</h3>
-                    <p>Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements
-                        and much more!</p>
+                    <h3>Suggestions For Food Name</h3>
+                    <p>Below are the suggestions of food name</p>
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <a href="#" class="btn btn-submit">Subscribe Now</a>
+                <div class="cta-txt">
+                    <h3>Not interested?</h3>
+                </div>
+                <a href="#spinIt" class="btn btn-submit">Spin Now</a>
             </div>
         </div>
     </div>
@@ -178,10 +126,13 @@
                     <p class="sec-para">Add your choices of places or name of the food to eat.</p>
                     <hr/>
                     <div class="text-center">
-                        <button id="addfod" data-toggle="modal" data-target="#squarespaceModal"
-                                class="btn btn-default">Add or Edit
+                        <button id="addfood1" data-toggle="modal" data-target="#add1"
+                                class="btn btn-default">Add 1
                         </button>
-                        <button id="start" class="btn btn-default">START</button>
+                        <button id="addfood2" data-toggle="modal" data-target="#add2"
+                                class="btn btn-default">Add 2
+                        </button>
+                        <button id="start" class="btn btn-default" onclick="setIsStopped();">START</button>
 
                         <button id="spin" class="btn btn-warning">STOP!</button>
                     </div>
@@ -197,8 +148,9 @@
         </div>
     </div>
 </section>
+
 <!-- MODAL -->
-<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+<div class="modal fade" id="add1" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
      aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -209,11 +161,11 @@
             </div>
             <div class="modal-body">
                 <!-- content goes here -->
-                <form class="form-horizontal">
+                <form class="form-horizontal" role="form" id="makan-mana-form">
                     <div class="form-group">
                         <label class="control-label col-sm-2" for="label1">Label 1</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="label1" value="Nasi">
+                            <input type="text" class="form-control" id="label1" value="KFC">
                         </div>
                     </div>
                     <div class="form-group">
@@ -261,9 +213,38 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="reset" id="delImage" class="btn btn-danger">Reset</button>
-                <button type="button" id="saveImage" class="btn btn-success" data-dismiss="modal" role="button">Save</button>
+                <button type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-success" data-dismiss="modal" role="button"
+                       onclick="setArray(this)"/>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="modal fade" id="add2" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                        class="sr-only">Close</span></button>
+                <h3 class="modal-title" id="lineModalLabel2">Add places or name of the food to eat</h3>
+            </div>
+            <div class="modal-body">
+                <!-- content goes here -->
+                <form class="form-horizontal" role="form" id="makan-mana-form2">
+
+                    <input type="button" value="Add a field" class="add" id="add"/>
+                    <div class="form-group"></div>
+                    <div id="buildyourform">
+                        <!--append form here-->
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="reset" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <input type="submit" class="btn btn-success" data-dismiss="modal" role="button"
+                       onclick="setArray(this)"/>
             </div>
         </div>
     </div>
@@ -276,10 +257,10 @@
         <div class="row white">
             <div class="col-md-8 col-sm-12">
                 <div class="section-title">
-                    <h2 class="head-title black">Contact Us</h2>
+                    <h2 class="head-title black">Makan Mana Feedback</h2>
                     <hr class="botm-line">
-                    <p class="sec-para black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua..</p>
+                    <p class="sec-para black">Any feedback of our system? Or you have any error? Please take a moment
+                        and give us your feedback, comment or suggestion.</p>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -319,14 +300,14 @@
 
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <h3 class="cont-title">Visit Us</h3>
+                    <h3 class="cont-title">Contact Us</h3>
                     <div class="location-info">
-                        <p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Via Principe Amedeo 9,
-                            Torino, Italy</p>
-                        <p class="white"><span aria-hidden="true" class="fa fa-phone"></span>Phone: 0039 333 12 68 347
+                        <p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Faculty of Computing,
+                            UTMJB</p>
+                        <p class="white"><span aria-hidden="true" class="fa fa-phone"></span>+(6)013 488 0418
                         </p>
-                        <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Email: <a href=""
-                                                                                                          class="link-dec">hi@yourdomain.com</a>
+                        <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span><a href=""
+                                                                                                   class="link-dec">naadiyah2@live.utm.my</a>
                         </p>
                     </div>
                 </div>
@@ -376,7 +357,19 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/spinwheel.js"></script>
+<script src="js/spinwheel.js"></script>       <!-- comment ini to see the other wheels-->
+<!--
+<script src="js/jquery.tinysort.min.js"></script>
+<script src="js/helpers.js">// Helpers</script>
+comment ini to see your previous wheels
+-->
+
+
+<!-- for google map api stuff -->
+<script type="text/javascript" src=js/maps.js></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWLxRISZffZwlKP47LZQlr1bvZGKfiXwA&libraries=places&callback=initMap">
+</script>
 
 </body>
 </html>

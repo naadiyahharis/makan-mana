@@ -1,2 +1,2 @@
 # MAKAN-MANA
-Group Project for Group 8
+Group Project for Group 7
